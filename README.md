@@ -1,0 +1,2 @@
+# CYPasswordView_Block
+CYPasswordView 是一个模仿支付宝输入支付密码的密码框(这是一个用block传递事件的版本)
