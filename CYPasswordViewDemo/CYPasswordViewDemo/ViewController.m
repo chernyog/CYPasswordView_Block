@@ -25,9 +25,6 @@ static BOOL flag = NO;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    /** 注册取消按钮点击的通知 */
-    [CYNotificationCenter addObserver:self selector:@selector(cancel) name:CYPasswordViewCancleButtonClickNotification object:nil];
-    [CYNotificationCenter addObserver:self selector:@selector(forgetPWD) name:CYPasswordViewForgetPWDButtonClickNotification object:nil];
 }
 
 - (void)dealloc {

@@ -14,11 +14,3 @@ const CGFloat CYPasswordViewTextFieldMarginTop = 25;
 const CGFloat CYPasswordViewForgetPWDButtonMarginTop = 12;
 
 NSString *const CYPasswordViewKeyboardNumberKey = @"CYPasswordViewKeyboardNumberKey";
-
-// 通知
-NSString *const CYPasswordViewCancleButtonClickNotification = @"CYPasswordViewCancleButtonClickNotification";
-NSString *const CYPasswordViewDeleteButtonClickNotification = @"CYPasswordViewDeleteButtonClickNotification";
-NSString *const CYPasswordViewNumberButtonClickNotification = @"CYPasswordViewNumberButtonClickNotification";
-NSString *const CYPasswordViewForgetPWDButtonClickNotification = @"CYPasswordViewForgetPWDButtonClickNotification";
-NSString *const CYPasswordViewEnabledUserInteractionNotification = @"CYPasswordViewEnabledUserInteractionNotification";
-NSString *const CYPasswordViewDisEnabledUserInteractionNotification = @"CYPasswordViewDisEnabledUserInteractionNotification";

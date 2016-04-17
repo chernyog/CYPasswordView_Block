@@ -27,8 +27,6 @@
 #define CYScreenWidth CYScreen.bounds.size.width
 #define CYScreenHeight CYScreen.bounds.size.height
 
-#define CYNotificationCenter [NSNotificationCenter defaultCenter]
-
 // 常量
 /** 密码框的高度 */
 UIKIT_EXTERN const CGFloat CYPasswordInputViewHeight;
@@ -52,11 +50,3 @@ UIKIT_EXTERN const CGFloat CYPasswordViewTextFieldMarginTop;
 UIKIT_EXTERN const CGFloat CYPasswordViewForgetPWDButtonMarginTop;
 
 UIKIT_EXTERN NSString *const CYPasswordViewKeyboardNumberKey;
-
-// 通知
-UIKIT_EXTERN NSString *const CYPasswordViewCancleButtonClickNotification;
-UIKIT_EXTERN NSString *const CYPasswordViewDeleteButtonClickNotification;
-UIKIT_EXTERN NSString *const CYPasswordViewNumberButtonClickNotification;
-UIKIT_EXTERN NSString *const CYPasswordViewForgetPWDButtonClickNotification;
-UIKIT_EXTERN NSString *const CYPasswordViewEnabledUserInteractionNotification;
-UIKIT_EXTERN NSString *const CYPasswordViewDisEnabledUserInteractionNotification;
