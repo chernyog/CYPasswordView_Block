@@ -108,6 +108,21 @@ static NSString *tempStr;
 
 /** 输入框的取消按钮点击 */
 - (void)cancel {
+    [self resetPasswordView];
+    if (self.cancelBlock) {
+        self.cancelBlock();
+    }
+}
+/** 输入框的忘记密码按钮点击 */
+- (void)forgetPassword {
+    [self resetPasswordView];
+    if (self.forgetPasswordBlock) {
+        self.forgetPasswordBlock();
+    }
+}
+
+/** 重置密码框 */
+- (void)resetPasswordView {
     [self hidenKeyboard:^(BOOL finished) {
         self.passwordInputView.hidden = YES;
         tempStr = nil;
@@ -115,15 +130,6 @@ static NSString *tempStr;
         [self hidenKeyboard:nil];
         [self.passwordInputView setNeedsDisplay];
     }];
-    if (self.cancelBlock) {
-        self.cancelBlock();
-    }
-}
-/** 输入框的忘记密码按钮点击 */
-- (void)forgetPassword {
-    if (self.forgetPasswordBlock) {
-        self.forgetPasswordBlock();
-    }
 }
 
 #pragma mark  - 公开方法
