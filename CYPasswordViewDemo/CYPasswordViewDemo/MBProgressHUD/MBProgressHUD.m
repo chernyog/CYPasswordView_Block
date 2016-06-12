@@ -251,7 +251,7 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 		self.graceTimer = [NSTimer scheduledTimerWithTimeInterval:self.graceTime target:self 
 						   selector:@selector(handleGraceTimer:) userInfo:nil repeats:NO];
 	} 
-	// ... otherwise show the HUD imediately 
+	// ... otherwise show the HUD immediately 
 	else {
 		[self setNeedsDisplay];
 		[self showUsingAnimation:useAnimation];
